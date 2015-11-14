@@ -19,13 +19,15 @@
      [:meta {:name "viewport"
              :content "width=device-width, initial-scale=1"}]
      (include-css
-      "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css"
+      "//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css"
+      "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css"
       (if (env :dev) "css/site.css" "css/site.min.css"))]
     [:body
      mount-target
      (include-js
-      "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"
-      "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/mode/clojure/clojure.min.js"
+      "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"
+      "//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"
+      "//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/mode/clojure/clojure.min.js"
       "js/app.js")]]))
 
 
